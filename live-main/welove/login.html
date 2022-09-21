@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- step 1 -->
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="hero col-sm-4">
+        <div class="form-box col-lg-4">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <!-- <span></span> -->
+                <a href="reset-password.html" class="forgot-box">Forgot Password?</a>
+                <button type="submit" class="submit-btn">Log In</button>
+                <div class="text-center">
+                    <h4 class="text-center">Or</h4>
+                    <ul class="conatiner">
+                        <a class="btn-1" href="#" ><img src="assets/facebook.png"  height="25px" width="25px"></a>
+                        <a class="btn-2" href="#" ><img src="assets/search.png"  height="25px" width="25px"></a>
+                    </ul>
+                    </div>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p></p>
+                <div class="text-center">
+                    <h4 class="text-center">Or</h4>
+                    <ul class="conatiner">
+                        <a class="btn-1" href="#" ><img src="assets/facebook.png"  height="25px" width="25px"></a>
+                        <a class="btn-2" href="#" ><img src="assets/search.png"  height="25px" width="25px"></a>
+                    </ul>
+                    <p>By continuing, you agree to WeLove <a href="#">Terms of Service</a> and confirm that you have read WeLove <a href="#">Privacy Policy.</a></p>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "400px";
+            z.style.left = "0";
+        }
+
+    </script>
+</body>
+
+</html>

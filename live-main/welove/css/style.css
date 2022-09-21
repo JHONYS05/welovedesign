@@ -1,0 +1,113 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+  
+  .container{
+    width: 100%;
+  
+    min-height: 80vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .profile-card{
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+  }
+  .cover-pic{
+    display: block;
+    width: 100%;
+  }
+  .profile-pic{
+    width: 140px;
+    border-radius: 50%;
+    margin-top: -70px;
+    box-shadow: 0 0 0 0px #ff004f;
+    transition: box-shadow 0.5s;
+  }
+  .profile-pic:hover{
+    box-shadow: 0 0 0 5px #ff004f;
+  }
+  .profile-card h1{
+    font-weight: 600;
+  }
+  .follow-btn{
+    display: inline-block;
+    text-decoration: #333;
+    border: 1px solid #ff004f;
+    color: #555;
+    padding: 6px 35px;
+    margin: 25px 0;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  .data{
+    display: flex;
+   justify-content: space-around;
+  }
+  .data h3{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+  .data span{
+    display: flex;
+    font-size: 1em;
+    font-weight: 400;
+    opacity: 1.5;
+    color: black;
+  }
+  .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .actionBtn button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff004f;
+    color: #fff;
+    cursor: pointer;
+  }
+  .card-video {
+    display: flex;
+   justify-content: space-around;
+   padding-left: 1cm;
+   padding-right: 1cm;
+
+  }
+  .card video{
+    display: inline-block;
+    padding: 10px 30px;
+    padding-left: 1cm;
+  }
+  
+  
+  /*
+  .row{
+    display: flex;
+    justify-content: space-around;
+  }
+  .row h2{
+    display: inline-flexbox;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  */
+  
